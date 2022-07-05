@@ -4,10 +4,12 @@ import Title from '../src/compenentes/title/Title'
 function HomePage(){
   return(
     <div>
-      <Title />
-      <Title />
-      <Title />
-      Hello World, NextJs + reactJs
+      <Title>
+        Um titulo
+        </Title> 
+      <p>Um paragrafo qualquer</p>
+      <Title> outro titulo </Title>   
+      <p>outro paragrafo qualquer</p>
     </div>
   )
 }
