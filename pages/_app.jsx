@@ -1,7 +1,6 @@
 //aqui serve para usar alteracoes globais, ou melhor importar arquivos com alterações globais
 
 import Head from 'next/head'
-
 import Title from '..///src/compenentes/title/Title'
 import Subtitle from '..//src/compenentes/subtitle/subtitle'
 function App({Component, pageProps}){
