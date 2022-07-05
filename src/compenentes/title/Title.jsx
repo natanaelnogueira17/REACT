@@ -1,7 +1,10 @@
+/*exemplo de componente react com props(children)   */
+
+
 import styles from './title.module.css'
 
-const constante = 'Os reds estão a flor da pele, cuidado!'
-function Title (props){
+
+function Title (props){ //props sao imutaveis, inalteraveis
   return(
     <h1 className={styles.Title}>
     {props.children}
