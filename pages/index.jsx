@@ -1,11 +1,20 @@
+import {useState} from 'react'
 import Head from 'next/head'
 import Title from '../src/compenentes/title/Title'
 import Subtitle from '../src/compenentes/subtitle/subtitle'
-import Button from '../src/compenentes/Button/button'
+import Button from '../src/compenentes/button/button'
 
 
 
 function HomePage(){
+const [click, setClick] = useState(0)
+
+  const handleClick = () =>{   
+setClick(click + 1)
+  
+  }
+
+  
   return(
     <>
     <Head>
@@ -13,13 +22,20 @@ function HomePage(){
     </Head>
     
     <div>
-      <Title>Um titulo</Title> 
-        <Subtitle>Esse é meu subtítulo</Subtitle>
+      <Title>Um título</Title> 
+        <Subtitle text = "Um subtítulo">Esse é meu subtítulo</Subtitle>
           <p>Um paragrafo qualquer</p>
-        <Title> outro titulo </Title>  
+        <Title> outro título </Title>  
         <Subtitle>Esse é meu subtítulo</Subtitle> 
-        <p>outro paragrafo qualquer</p>
-        <Button>Botão teste</Button>            
+        <Button 
+        onClick={handleClick}
+        
+        >
+          Botão teste
+        </Button>
+        <p>clicks: {click}</p>
+         
+                 
     </div>
     
     </>

@@ -1,0 +1,16 @@
+.button{
+background-color: darkred;
+border: none;
+color: aliceblue;
+font-size: 16px;
+padding: 5px;
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+transition: all 1s;
+
+}
+
+.button:hover{
+  background-color: rgb(91, 3, 3);
+}
