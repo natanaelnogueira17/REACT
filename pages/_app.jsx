@@ -1,5 +1,5 @@
 //aqui serve para usar alteracoes globais, ou melhor importar arquivos com alterações globais
-
+import style from '../src/style.css'
 import Head from 'next/head'
 import Title from '..///src/compenentes/title/Title'
 import Subtitle from '..//src/compenentes/subtitle/subtitle'
@@ -10,9 +10,9 @@ return (
   <Head>Titulo Padrao</Head>
   <div>
     <Component {...pageProps}/>
-    <Title> Um título</Title>
+    <Title text ='um título'> </Title>
     <Subtitle text ='Um subtitulo'/>
-    <Title>Outro Titulo</Title>
+    <Title text= 'Outro Titulo'></Title>
     <Subtitle text = 'Outro Subtitulo'/>
   </div>
 </>
